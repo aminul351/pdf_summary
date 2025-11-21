@@ -7,8 +7,11 @@ from PyPDF2 import PdfReader
 
 # load_dotenv()
 
-# Load API key
-genai.configure(api_key=os.environ[GEMINI_API_KEY])
+# Access Streamlit Secrets
+gemini_key = st.secrets["GEMINI_API_KEY"]
+
+# Configure Gemini
+genai.configure(api_key=gemini_key)
 
 # Use FREE MODEL
 model = genai.GenerativeModel("gemini-pro-latest")
