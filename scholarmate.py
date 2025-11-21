@@ -8,7 +8,7 @@ from PyPDF2 import PdfReader
 load_dotenv()
 
 # Load API key
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key="AIzaSyAbU4QXCagB9aePV2CMutNBl7X5_PTuUrw")
 
 # Use FREE MODEL
 model = genai.GenerativeModel("gemini-pro-latest")
