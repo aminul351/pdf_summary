@@ -1,11 +1,11 @@
 import streamlit as st
 import tempfile
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import google.generativeai as genai
 from PyPDF2 import PdfReader
 
-load_dotenv()
+# load_dotenv()
 
 # Load API key
 genai.configure(api_key="AIzaSyAbU4QXCagB9aePV2CMutNBl7X5_PTuUrw")
