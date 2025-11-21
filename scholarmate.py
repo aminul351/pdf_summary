@@ -1,7 +1,7 @@
 import streamlit as st
 import tempfile
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import google.generativeai as genai
 from PyPDF2 import PdfReader
 
